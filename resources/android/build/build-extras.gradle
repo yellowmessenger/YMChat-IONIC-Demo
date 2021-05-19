@@ -1,0 +1,29 @@
+android {
+	configurations.all {
+		resolutionStrategy {
+			force 'com.android.support:support-v4:27.1.0'
+		}
+	}
+	defaultConfig {
+		ndk {
+			abiFilters "armeabi", "arm64-v8a", "armeabi-v7a", "x86", "mips", "x86_64"
+		}
+		multiDexEnabled true
+		targetSdkVersion 28
+		minSdkVersion 22
+	}
+	lintOptions {
+      disable 'MissingTranslation'
+	}
+	buildTypes {
+        release {
+			manifestPlaceholders = [usesCleartextTraffic:"false"]
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+        debug {
+            manifestPlaceholders = [usesCleartextTraffic:"true"]
+        }
+    }
+}

@@ -1,7 +1,7 @@
 # YMChat-IONIC-Demo
 This project demonstrates how Yellow Messenger chatbot can be integrated in Ionic apps
 
-## Prequisites
+## Prerequisite
 You will need ionic library installed in your system. It can be installed using
 ```sh
 npm install -g @ionic/cli

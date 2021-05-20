@@ -15,7 +15,7 @@ npm install -g @ionic/cli
 
 
 ## Example Code
-Create a method `startChatBot()` to get the chat bot running.
+Create a method `startChatBot()` to get the chat bot running. You would need to invoke this method on a button-press or navigation click.
 ```ts
   let browser: any;
 

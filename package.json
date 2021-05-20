@@ -95,12 +95,14 @@
     "@ionic/lab": "3.1.2",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
+    "@types/node": "^8.10.66",
     "codelyzer": "^5.0.0",
     "com-darryncampbell-cordova-plugin-intent": "^1.3.0",
-    "cordova-android": "^8.1.0",
+    "cordova-android": "^9.0.0",
+    "cordova-plugin-androidx-adapter": "^1.1.3",
     "cordova-plugin-app-launcher": "^0.4.0",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-inappbrowser": "git+https://github.com/apache/cordova-plugin-inappbrowser.git",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.2.1",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -145,33 +147,15 @@
       "cordova-plugin-sslcertificatechecker": {},
       "cordova-plugin-app-launcher": {},
       "cordova-plugin-intent": {},
-      "ionic-plugin-deeplinks": {
-        "URL_SCHEME": "irecruit",
-        "DEEPLINK_SCHEME": "https",
-        "DEEPLINK_HOST": "irecruit.tataaia.com",
-        "ANDROID_PATH_PREFIX": "/",
-        "ANDROID_2_PATH_PREFIX": "/",
-        "ANDROID_3_PATH_PREFIX": "/",
-        "ANDROID_4_PATH_PREFIX": "/",
-        "ANDROID_5_PATH_PREFIX": "/",
-        "DEEPLINK_2_SCHEME": " ",
-        "DEEPLINK_2_HOST": " ",
-        "DEEPLINK_3_SCHEME": " ",
-        "DEEPLINK_3_HOST": " ",
-        "DEEPLINK_4_SCHEME": " ",
-        "DEEPLINK_4_HOST": " ",
-        "DEEPLINK_5_SCHEME": " ",
-        "DEEPLINK_5_HOST": " "
-      },
       "com-darryncampbell-cordova-plugin-intent": {},
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "com.napolitano.cordova.plugin.intent": {}
+      "com.napolitano.cordova.plugin.intent": {},
+      "cordova-plugin-androidx-adapter": {},
+      "cordova-plugin-inappbrowser": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }

@@ -10,7 +10,8 @@ npm install -g @ionic/cli
 ## Run the demo app
 1. Clone the demo app using `git clone https://github.com/yellowmessenger/YMChat-IONIC-Demo.git`
 2. cd /path/to/YMChat-IONIC-Demo
-3. Run `ionic start myApp app-name`
+3. Install the npm dependencies with `npm i`
+3. Run the app with `ionic cordova run android` or `ionic cordova run ios`, depending on the platform.
 
 ## Configuration
 

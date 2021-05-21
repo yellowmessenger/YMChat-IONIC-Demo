@@ -22,17 +22,9 @@ export class Tab1Page {
     let options:string = "location=no,beforeload=yes";
     this.browser = cordova.InAppBrowser.open(url, target, options);
 
-    //For opening pdf links in system browser.
     this.browser.addEventListener('beforeload', function(params, callback){
-      // Add this check if you want only .pdf links to open in system browsers
-      if(params.url.match(".pdf")){ 
-          // Open PDFs in system browser (instead of InAppBrowser)
+          // Opening links in system browser (instead of InAppBrowser)
           this.browser.open(params.url, "_system");
-      }else{
-          // Invoke callback to load this URL in InAppBrowser
-          callback(params.url);
-      }
     });
   }
-
 }

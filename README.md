@@ -21,7 +21,7 @@ Create a method `startChatBot()` to get the chat bot running. You would need to 
 
   startChatBot(){
     let botID:string = "<YOUR-BOT-ID>"; // Compulsary
-    let payloadData = {token: "<YOUR-DATA>"}; // can be a string as well
+    let payloadData = {token: "<YOUR-DATA>"}; // can be a json object or a string
     let payload = JSON.stringify(payloadData);
     let urlBase:string = "https://app.yellowmessenger.com/pwa/live/";
     let url:string = encodeURI(urlBase+botID+"/ym.payload="+payload);
@@ -57,7 +57,15 @@ This will pull the plugin from the master branch of the repository.
 let botID:string = "<YOUR-BOT-ID>"; // Compulsary
 ```
 ### Payload
+Can be a json object or a string. Example payload:
+#### String as payload data
 ```ts
-let payloadData = {some-key: "SOME-VALUE"}; // can be a string as well. any key value pair can be passed in payloadData.
+let payloadData = "<SOME-DATA>";
 let payload = JSON.stringify(payloadData);
 ```
+#### JSON object as payload data
+```ts
+let payloadData = {some-key: "SOME-VALUE"}; 
+let payload = JSON.stringify(payloadData);
+```
+

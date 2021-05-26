@@ -17,7 +17,7 @@ export class Tab1Page {
     let botID:string = "x1587041004122";
     let payloadData = {token: "123456789"};
     let urlBase:string = "https://app.yellowmessenger.com/pwa/live/";
-    let url:string = encodeURI(urlBase+botID+"/ym.payload="+JSON.stringify(payloadData));
+    let url:string = encodeURI(urlBase+botID+"?ym.payload="+JSON.stringify(payloadData));
     let target:string = "_blank";
     let options:string = "location=no,beforeload=yes";
     this.browser = cordova.InAppBrowser.open(url, target, options);

@@ -24,7 +24,7 @@ Create a method `startChatBot()` to get the chat bot running. You would need to 
     let payloadData = {token: "<YOUR-DATA>"}; // can be a json object or a string
     let payload = JSON.stringify(payloadData);
     let urlBase:string = "https://app.yellowmessenger.com/pwa/live/";
-    let url:string = encodeURI(urlBase+botID+"/ym.payload="+payload);
+    let url:string = encodeURI(urlBase+botID+"?ym.payload="+payload);
     let target:string = "_blank";
     let options:string = "location=no,beforeload=yes";
     this.browser = cordova.InAppBrowser.open(url, target, options);
